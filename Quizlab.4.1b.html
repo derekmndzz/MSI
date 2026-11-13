@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoHome Solutions - Smart Device Catalog</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Plus+Jakarta+Sans:wght@400;500;700;800" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+</head>
+
+<body>
+
+<div class="relative flex size-full min-h-screen flex-col bg-white justify-between">
+
+    <!-- HEADER -->
+    <div class="flex items-center bg-white p-4 pb-2 justify-between border-b border-gray-200">
+
+        <div class="flex items-center gap-3">
+
+            <div class="text-green-600 flex size-8 shrink-0 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="32px" height="32px"
+                     fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM64,88a8,8,0,0,1,8-8H184a8,8,0,0,1,0,16H72A8,8,0,0,1,64,88Zm0,32a8,8,0,0,1,8-8H184a8,8,0,0,1,0,16H72A8,8,0,0,1,64,120Zm0,32a8,8,0,0,1,8-8H184a8,8,0,0,1,0,16H72A8,8,0,0,1,64,152Z"/>
+                </svg>
+            </div>
+
+            <h1 class="text-gray-800 text-xl font-bold">
+                EcoHome Device Catalog
+            </h1>
+
+        </div>
+
+        <div class="status-indicator"></div>
+
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="flex-1 p-4 space-y-6">
+
+        <!-- SMART HOME DEVICES -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200">
+
+            <div class="flex items-center justify-between mb-4">
+
+                <h2 class="text-gray-800 text-lg font-bold">
+                    Smart Home Devices
+                </h2>
+
+                <div class="text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24px" height="24px"
+                         fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77Z"/>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div id="deviceContainer"></div>
+
+        </div>
+
+
+        <!-- INSTALLATION SERVICES -->
+        <div class="bg-white rounded-xl p-6 border border-gray-200">
+
+            <div class="flex items-center justify-between mb-4">
+
+                <h2 class="text-gray-800 text-lg font-bold">
+                    Installation Services
+                </h2>
+
+                <div class="text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="24px" height="24px"
+                         fill="currentColor" viewBox="0 0 256 256">
+                        <path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69Z"/>
+                    </svg>
+                </div>
+
+            </div>
+
+            <ul id="serviceList"></ul>
+
+        </div>
+
+
+        <!-- ACTIVITY INSTRUCTIONS -->
+        <div class="demo-section">
+
+            <h3 class="text-lg font-bold text-gray-800 mb-3">
+                Activity Instructions
+            </h3>
+
+            <div class="space-y-4 text-sm">
+
+                <div>
+                    <strong>Step 1:</strong> Template function completed
+                    <br>
+                    <em>The device card template function is ready to use.</em>
+                </div>
+
+                <div>
+                    <strong>Step 2:</strong> Service array expansion
+                    <br>
+                    <em>Added Emergency Repair as the fourth service.</em>
+                </div>
+
+                <div>
+                    <strong>Step 3:</strong> Device availability check
+                    <br>
+                    <em>Unavailable devices receive the unavailable CSS class.</em>
+                </div>
+
+                <div>
+                    <strong>Step 4:</strong> Premium service highlighting
+                    <br>
+                    <em>Premium services are highlighted in green.</em>
+                </div>
+
+                <div>
+                    <strong>Step 5:</strong> Complete data-driven system
+                    <br>
+                    <em>Arrays, objects, loops and conditional logic are working together.</em>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM NAVIGATION -->
+    <div class="flex gap-2 border-t border-gray-200 bg-white px-4 pb-3 pt-2">
+
+        <a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-400" href="#">
+            <span>⌂</span>
+            <p class="text-xs font-medium">Dashboard</p>
+        </a>
+
+        <a class="flex flex-1 flex-col items-center justify-end gap-1 text-green-600" href="#">
+            <span>▤</span>
+            <p class="text-xs font-medium">Catalog</p>
+        </a>
+
+        <a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-400" href="#">
+            <span>⚙</span>
+            <p class="text-xs font-medium">Services</p>
+        </a>
+
+        <a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-400" href="#">
+            <span>☎</span>
+            <p class="text-xs font-medium">Support</p>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
